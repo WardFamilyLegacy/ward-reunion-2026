@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ward Family Reunion 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root { 
+            --nola-purple: #4B0082; 
+            --nola-gold: #FFD700; 
+            --nola-green: #008542; 
+            --dark-text: #2c3e50;
+        }
+
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            margin: 0; 
+            background-color: #fdfdfd; 
+            color: var(--dark-text); 
+            line-height: 1.8; 
+            font-size: 1.25rem;
+        }
+        
+        header { 
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://lp-cms-production.imgix.net/2024-08/shutterstockRF390070024.jpg?auto=format,compress&q=72&fit=crop&w=1200'); 
+            background-size: cover; 
+            background-position: center; 
+            color: var(--nola-gold); 
+            text-align: center; 
+            padding: 160px 20px; 
+        }
+
+        h1 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 4.5rem; 
+            margin: 0; 
+            text-shadow: 3px 3px 8px rgba(0,0,0,0.8); 
+            letter-spacing: 2px;
+            line-height: 1.1;
+        }
+
+        .tagline { 
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem; 
+            font-weight: 700;
+            color: white; 
+            margin-top: 20px; 
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.8); 
+            text-transform: uppercase;
+        }
+
+        .container { max-width: 1100px; margin: auto; padding: 60px 20px; }
+        
+        h2 { 
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: var(--nola-purple); 
+            border-bottom: 4px solid var(--nola-gold); 
+            padding-bottom: 15px; 
+            margin-top: 60px; 
+        }
+        
+        .cta-box { 
+            background: var(--nola-purple); 
+            color: white; 
+            padding: 50px 20px; 
+            border-radius: 15px; 
+            text-align: center; 
+            margin: 50px 0; 
+            border: 5px solid var(--nola-gold); 
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+
+        .cta-box h2 { 
+            color: var(--nola-gold); 
+            border-bottom: 2px solid white; 
+            display: inline-block; 
+            margin-top: 0; 
+            margin-bottom: 30px; 
+            font-size: 2.5rem;
+        }
+
+        .form-container {
+            background: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 30px;
+            overflow: hidden;
+        }
+        
+        .btn { 
+            font-family: 'Montserrat', sans-serif;
+            background: var(--nola-gold); 
+            color: black; 
+            padding: 20px 45px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1.5rem; 
+            border-radius: 60px; 
+            display: inline-block; 
+            transition: all 0.3s ease; 
+            margin-top: 20px; 
+            border: none; 
+            cursor: pointer; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+        }
+        .btn:hover { transform: translateY(-5px); background: white; box-shadow: 0 8px 20px rgba(0,0,0,0.5); }
+
+        .hotel-btn { background: white; color: var(--nola-purple); text-decoration: underline; font-size: 1.2rem; }
+        .green-btn { background: var(--nola-green); color: white; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 30px; }
+        .card { 
+            background: white; 
+            padding: 35px; 
+            border-radius: 12px; 
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1); 
+            border-top: 8px solid var(--nola-purple); 
+        }
+        .card h3 { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--nola-purple); margin-top: 0; }
+        
+        #scholarship { 
+            background: #f4eeff; 
+            padding: 60px; 
+            border-radius: 15px; 
+            border: 3px dashed var(--nola-purple); 
+            margin-top: 60px; 
+            text-align: center; 
+        }
+
+        .committee-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 25px; 
+            background: #f0f0f0; 
+            padding: 40px; 
+            border-radius: 12px; 
+            margin-top: 30px; 
+        }
+        .member { font-size: 1.4rem; border-bottom: 1px solid #ddd; padding: 10px 0; }
+        .role { font-size: 1.1rem; color: #777; font-weight: bold; text-transform: uppercase; }
+
+        .fee-list { list-style: none; padding: 0; font-size: 1.8rem; font-weight: 700; }
+        
+        .early-bird { 
+            color: #ff9800; 
+            font-weight: bold; 
+            background: rgba(255,255,255,0.1); 
+            padding: 25px; 
+            border-radius: 10px; 
+            display: inline-block; 
+            border: 1px solid rgba(255,255,255,0.3); 
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        footer { background: #222; color: white; text-align: center; padding: 60px; margin-top: 80px; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.6rem; }
+            .tagline { font-size: 1.3rem; }
+            .cta-box h2 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ward Family Reunion 2026</h1>
+    <div class="tagline">The Wards: Big Family in the Big Easy</div>
+    <p style="font-size: 1.6rem; color: #eee;">September 4 - 6, 2026 | New Orleans, LA</p>
+</header>
+
+<div class="container">
+    
+    <section id="hotel">
+        <h2>Reunion Headquarters</h2>
+        <p><strong>Crowne Plaza New Orleans French Qtr – Astor</strong><br>
+        739 Canal St, New Orleans, LA 70130</p>
+        <p>💰 <strong>Special Rate:</strong> $149 per night<br>
+        ✨ <strong>Perk:</strong> Breakfast is included in the room rate for our family block!</p>
+        <a href="https://book.passkey.com/e/51135478" target="_blank" class="btn hotel-btn">CLICK HERE TO BOOK YOUR ROOM ONLINE</a>
+    </section>
+
+    <div class="cta-box" id="registration">
+        <h2>Registration Information</h2>
+        
+        <div class="early-bird">
+            <p>🌟 EARLY BIRD DISCOUNT 🌟<br>
+            Pay in full by <strong>March 1, 2026</strong>: $150<br>
+            Pay in full by <strong>May 1, 2026</strong>: $175</p>
+        </div>
+
+        <ul class="fee-list">
+            <li>Adults (13+): $200</li>
+            <li>Children (6-12): $75</li>
+            <li>Children (5 & under): FREE</li>
+        </ul>
+        
+        <p style="margin: 20px 0;"><small>Registration includes T-shirt, Saturday Banquet, and Sunday Picnic.</small></p>
+
+        <div class="form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKlIhJp1yrHdQ-d74DMLCX_uKT7GmY4sCQZGNXZIrP5cVw3A/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </div>
+
+    <section id="itinerary">
+        <h2>Weekend Schedule</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Friday, Sept 4</h3>
+                <p><strong>Arrival & Check-in</strong><br>3:00 PM - 6:00 PM</p>
+                <p><strong>The Ward Game Night</strong><br>7:00 PM | Meeting Room TBD<br>Kick off the weekend with food, music, and family games!</p>
+            </div>
+            <div class="card">
+                <h3>Saturday, Sept 5</h3>
+                <p><strong>Morning:</strong> Breakfast in the hotel (included with room).</p>
+                <p><strong>Afternoon:</strong> Big Easy Free Time! Explore the French Quarter.</p>
+                <p><strong>7:00 PM:</strong> The Ward Family Gala Banquet (Formal Dress).</p>
+            </div>
+            <div class="card">
+                <h3>Sunday, Sept 6</h3>
+                <p><strong>9:30 AM:</strong> Worship & Family Business Meeting.</p>
+                <p><strong>1:00 PM:</strong> Farewell Picnic. One last meal together before we depart.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="scholarship">
+        <h2>Ward Family Scholarship Fund</h2>
+        <p>Support our legacy! Our scholarship committee helps provide a head start for the students in our family.</p>
+        <p><em>Headed by Carol Harrell & Wanda McNeal.</em></p>
+        <a href="#registration" class="btn green-btn">DONATE VIA REGISTRATION FORM</a>
+    </section>
+
+    <section id="committee">
+        <h2>Your 2026 Committee</h2>
+        <div class="committee-grid">
+            <div class="member"><strong>Tiffany Vicks</strong><br><span class="role">Chair</span></div>
+            <div class="member"><strong>Eboni Long</strong><br><span class="role">Co-Chair</span></div>
+            <div class="member"><strong>Kirsten Wright</strong><br><span class="role">Treasurer</span></div>
+            <div class="member"><strong>Jilamara Bigham-Jackson</strong><br><span class="role">Fundraising Lead</span></div>
+            <div class="member"><strong>Derry & Darrius</strong><br><span class="role">Entertainment</span></div>
+            <div class="member"><strong>Chanelle & Melanie</strong><br><span class="role">Communications</span></div>
+            <div class="member"><strong>Monica McKendrick</strong><br><span class="role">T-Shirts & Merch</span></div>
+            <div class="member"><strong>Carol & Wanda</strong><br><span class="role">Scholarship Committee</span></div>
+            <div class="member"><strong>Miriam Simpson</strong><br><span class="role">Member at Large</span></div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>Ward Family Reunion 2026</p>
+    <p>&copy; 2026 Ward Family Reunion Committee</p>
+</footer>
+
+</body>
+</html>
